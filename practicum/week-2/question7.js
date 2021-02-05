@@ -11,5 +11,16 @@ output: 4
 */
 
 var maxSumOfMins = function(input) {
-
+       var sorted = input.sort()
+       var result = 0
+       var pairs = [];
+       for (var i = 0; i < sorted.length; i++){
+           if(i == 0 || i%2==0){
+              pairs.push([sorted[i], sorted[i+1]]);
+           };
+       }; 
+       for (var j = 0; j < pairs.length; j++){
+              result += pairs[j][0]
+       }
+       return result;
 };
