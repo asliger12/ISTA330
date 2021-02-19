@@ -29,4 +29,3 @@ var d_count = function(input1, input2, d) {
     return d_count;
 };
 
-console.log(d_count([2,100,37,3], [4,8,10,0,-14], 10))
