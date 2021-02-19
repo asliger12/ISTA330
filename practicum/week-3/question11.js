@@ -14,5 +14,19 @@ output: 1
 */
 
 var d_count = function(input1, input2, d) {
-
+    var d_count = 0;
+    for (var i=0; i < input1.length; i++){
+        var count = 0;
+        for (var j=0; j <input2.length; j++){
+            if (input1[i]-input2[j] <= d){
+                count ++;
+            }
+        }
+        if (count == 0){
+            d_count++;
+        }
+    }
+    return d_count;
 };
+
+console.log(d_count([2,100,37,3], [4,8,10,0,-14], 10))
