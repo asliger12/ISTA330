@@ -51,6 +51,16 @@
              rose,
              waterlily
        ];
+
+        function flowerGrid(flowers){
+        var text = '';  
+        for (var i=0; i < flowers.length; i++){
+            text += flowers[i].value + "<br>"
+           }
+           return text;
+        }
+
+       document.getElementById("flowersDiv").innerHTML = flowerGrid(flowers);
     </script>
 </body>
 </html>
